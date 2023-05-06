@@ -173,8 +173,6 @@ body {
   line-height: 24px;
   /* identical to box height, or 150% */
 
-  display: flex;
-  align-items: center;
   letter-spacing: 0.04em;
 
   /* WHITE */
@@ -193,6 +191,9 @@ body {
   height: 104px;
   padding-top: 120px;
   gap: 24px;
+}
+.list-menu {
+  width: calc((100% - 72px) / 4);
 }
 
 /* /////////////work///////// */
@@ -237,6 +238,7 @@ body {
   background-color: #f4f4fd;
   margin-top: 120px;
   padding: 120px 0;
+  width: calc((100% - 48px) / 3);
 }
 .our-team {
   margin-bottom: 72px;
@@ -304,6 +306,7 @@ body {
   margin-left: 24px;
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 48px) / 3);
 }
 
 /* //////////ffooootteerrr//////// */
