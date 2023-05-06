@@ -58,6 +58,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+
   padding: 0px;
   gap: 40px;
 }
@@ -131,33 +132,36 @@ body {
 .hero {
   background-color: #2e2f42;
   min-height: 600px;
+  padding: 188px 0;
 }
 .main-title {
+  top: 260px;
+  left: 472px;
+
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 56px;
   line-height: 60px;
-  justify-content: center;
-  align-items: center;
+  /* or 107% */
 
+  text-align: center;
   letter-spacing: 0.02em;
-  padding-top: 188px;
 
+  max-width: 496px;
   color: #ffffff;
 }
 .main-button {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  display: block;
   padding: 16px 32px;
   gap: 10px;
-
-  position: absolute;
+  min-width: 169px;
 
   height: 56px;
   left: 636px;
   margin-top: 48px;
+  border: none;
+  border-radius: 4px;
 
   /* IRIS */
 
@@ -179,20 +183,28 @@ body {
 }
 
 /* //////advantages/////// */
+.advantages {
+  padding: 120px 0;
+}
 .list-advantages {
   display: flex;
   flex-direction: row;
 
   height: 104px;
   padding-top: 120px;
+  gap: 24px;
 }
 
 /* /////////////work///////// */
+.work {
+  padding-bottom: 120px;
+}
+
 .container-work {
   padding-top: 120px;
 }
 .work-title {
-  padding-top: 120px;
+  margin-bottom: 72px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -212,9 +224,11 @@ body {
   display: flex;
   flex-direction: row;
   margin-top: 72px;
+  gap: 24px;
 }
 .work-li {
   margin-left: 24px;
+  width: calc((100% - 48px) / 3);
 }
 
 /* /////////////////////////////////////team//////////////////////////////////// */
@@ -222,9 +236,14 @@ body {
   height: 732px;
   background-color: #f4f4fd;
   margin-top: 120px;
+  padding: 120px 0;
+}
+.our-team {
+  margin-bottom: 72px;
 }
 .wrapper {
   background-color: #ffffff;
+  padding: 32px 16px;
 }
 .list-title {
   padding-top: 32px;
@@ -241,6 +260,7 @@ body {
   /* NAVY BLUE */
 
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .list-text {
   font-family: "Roboto";
@@ -256,7 +276,6 @@ body {
   /* SLATE */
 
   color: #434455;
-  margin-top: 8px;
 }
 .our-team {
   font-family: "Roboto";
@@ -279,17 +298,23 @@ body {
   display: flex;
   flex-direction: row;
   margin-top: 72px;
+  gap: 24px;
 }
 .team-li {
   margin-left: 24px;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* //////////ffooootteerrr//////// */
 .footer {
+  padding: 100px 0;
   min-height: 312px;
   background-color: #2e2f42;
 }
 .logo-footer {
+  display: inline-block;
+  margin-bottom: 16px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
@@ -329,7 +354,9 @@ body {
 }
 
 /* /////////////////////////////          PORTFOLIO   //////////////////////////////// */
-
+.main-nav {
+  padding: 96px 0 120px;
+}
 .list-button {
   display: flex;
   flex-direction: row;
@@ -337,6 +364,7 @@ body {
   align-items: flex-start;
   padding: 96px;
   gap: 24px;
+  margin-bottom: 72px;
 }
 .button-list {
   display: flex;
@@ -373,23 +401,29 @@ body {
 .button-list:hover {
   background: #404bbf;
   color: #ffffff;
+  border: 1px solid transparent;
 }
 .button-list:focus {
   background: #404bbf;
   color: #ffffff;
+  border: 1px solid transparent;
 }
 .list-partfolio {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 72px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 .link-partfolio {
+  width: calc((100% - 48px) / 3);
   margin-left: 24px;
   margin-bottom: 48px;
 }
 .wrapper-link {
-  padding-top: 32px;
+  padding: 32px 16px;
+
   border: 1px solid #e7e9fc;
   border-top: none;
 }
@@ -406,6 +440,7 @@ body {
   /* NAVY BLUE */
 
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .list-text-portfolio {
   font-family: "Roboto";
@@ -416,7 +451,6 @@ body {
   /* identical to box height, or 150% */
 
   letter-spacing: 0.02em;
-  margin-top: 8px;
 
   /* SLATE */
 
