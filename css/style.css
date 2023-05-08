@@ -203,7 +203,10 @@ body {
 .work {
   padding-bottom: 120px;
 }
-
+.list-work {
+  flex-direction: row;
+  margin-top: 72px;
+}
 .container-work {
   padding-top: 120px;
 }
@@ -231,7 +234,6 @@ body {
   gap: 24px;
 }
 .work-li {
-  margin-left: 24px;
   width: calc((100% - 48px) / 3);
 }
 
